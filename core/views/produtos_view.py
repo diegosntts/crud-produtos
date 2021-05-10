@@ -7,7 +7,7 @@ from django.shortcuts import redirect, render, get_object_or_404
 from ..forms import ProdutosForm
 from ..models import Produtos
 
-ITEMS_PER_PAGE = 5
+ITEMS_PER_PAGE = 4
 
 # Home produto
 # Home produto ainda precisa ser modificada

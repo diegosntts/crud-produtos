@@ -2,16 +2,16 @@
 {% extends '../base_painel.html' %}
 <!-- Chamada do titulo-->
 {% block titulo %}
-Produtos
+Products
 {% endblock titulo %}
 <!--Capturando o conteudo para jogar na base -> home-->
 {% block conteudo %}
-<h1>Produtos</h1>
+<h1>Products</h1>
 <br>
 <div class="row">
     <div class="col-sm-3 col-12">
         <a class="btn btn-success" href="{% url 'cadastrar_produtos'%}">
-            <i class="material-icons align-middle"></i>Cadastrar
+            <i class="material-icons align-middle"></i>Register
         </a>
     </div>
     <div class="col-sm-9 col-12 float-right">
@@ -22,7 +22,7 @@ Produtos
             </div>
             <div class="ml-2">
                 <button type="submit" class="btn btn-success btn-sm" id="busca-submit" name="busca-submit">
-                    <i class="material-icons align-middle">search</i>Buscar
+                    <i class="material-icons align-middle"></i>Search
                 </button>
                 {% if busca is not None %}
                 <a class="btn btn-primary btn-sm text-white" name="limpar-busca" href="">

@@ -13,8 +13,8 @@ Cadastrar produto
         {% csrf_token %}
         {{ form|crispy }}
         <br>
-        <input class="btn btn-success" type="submit" value="Salvar">
-        <a class='btn btn-danger' href="{% url 'home_produtos' %}">Cancelar</a>
+        <input class="btn btn-success" type="submit" value="Save">
+        <a class='btn btn-danger' href="{% url 'home_produtos' %}">Cancel</a>
     </form>
 </div>
 {% endblock conteudo %}
