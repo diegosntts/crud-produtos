@@ -1,6 +1,4 @@
-Crud Produtos
-Requsitos: Python3
-Execução: 
-- pip install requirements.txt
-- python3 manage.py runserver
-    
+# crud-produtos
+Requisitos: python3
+
+Execução: pip install requirements.txt
