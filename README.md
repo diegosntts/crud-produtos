@@ -1,4 +1,4 @@
 # crud-produtos
 Requisitos: python3
 
-Execução: pip install requirements.txt
+Execução: pip install -r requirements.txt
