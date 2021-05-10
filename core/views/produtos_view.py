@@ -40,17 +40,12 @@ def cadastrar_produtos(request, template_name="produtos/cadastrar.html"):
 
 
 def editar_produtos(request, pk, template_name="produtos/cadastrar.html"):
-    produtos = get_object_or_404(Produtos, pk=pk)
-    if request.method == 'POST':
-                form = ProdutosForm(request.POST, instance=produtos)
-                if form.is_valid():
-                    produto = form.save(commit=False)
-                    produto.user_id = request.user.id
-                    produto.save()
-                    messages.success(
-                        request, "Produtos atualizado com sucesso.")
-                    return redirect('home_produtos')
-    else:
-                form = ProdutosForm(instance=produtos)
+    produto = Produtos.objects.get(pk=pk)
+    form = ProdutosForm(request.POST or None, instance=produto)
+    
+    if form.is_valid():
+        form.save()
+        return redirect('home_produtos')
+    return render(request, template_name, {'form':form, 'produto':produto})
        
 
