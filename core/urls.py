@@ -12,5 +12,6 @@ urlpatterns = [
     path('produtos/editar/<int:pk>', editar_produtos, name="editar_produtos"),
     # Rotas de profile
 
+
     # Rotas de help
 ]

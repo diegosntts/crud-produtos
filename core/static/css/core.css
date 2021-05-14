@@ -1,5 +1,62 @@
+/* Definindo uma configurações da pagina*/
 html, body {margin: 0;padding: 0;height: 100%;overflow: hidden;}
 
+#app{min-height: 100% !important;position: relative; background: #ecedf1;}
+div.body-content {position: relative; padding-bottom: 200px !important;}
+
+/* Configurações da sidebar, barra lateral */
+.navbar-django {
+    background-color: #2f3136;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
+  #sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    background: #343a40 !important;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+  }
+  
+  #sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: white;
+    border-bottom: 3px solid rgb(192, 92, 92);
+  }
+  
+  #sidebar-wrapper .list-group {
+    width: 15rem;
+    background: #343a40 !important;
+    color: white;
+  }
+  
+  #sidebar-wrapper .list-group .list-group-item {
+    background: #343a40 !important;
+    color: white;
+    border: none !important;
+    font-weight: bolder;
+  }
+  
+  #sidebar-wrapper .list-group .list-group-item:hover{
+    background: #fff !important;
+    color: black;
+    border: none !important;
+    font-weight: bolder;
+  }
+  
+  
+  #page-content-wrapper {
+    min-width: 100vw;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+/* Configurações do rodapé, verificar sobrposição sobre a sidebar */
 #rodape1 { bottom: 0;position: absolute;text-align: center;width: 100%;height: auto;line-height: 1.15;background: #212529;padding: 30px 0;}
 #rodape1 p { font-family: Arial, sans;  color: white;}
 #rodape1 p a { text-decoration: none; color: white;}
@@ -7,3 +64,29 @@ html, body {margin: 0;padding: 0;height: 100%;overflow: hidden;}
 #rodape2 { bottom: 0;position:relative;text-align: center;width: 100%;height: auto;line-height: 1.15;background: #212529;padding: 30px 0;}
 #rodape2 p { font-family: Arial, sans;  color: white;}
 #rodape2 p a { text-decoration: none; color: white;}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+      margin-left: 0;
+    }
+  
+    #page-content-wrapper {
+      min-width: 0;
+      width: 100%;
+    }
+  
+    #wrapper.toggled #sidebar-wrapper {
+      margin-left: -15rem;
+    }
+  }
+  
+  .card-painel-azul {
+      background: #54585a !important;
+      color: white !important;
+  }
+  
+  .card-painel-verde {
+      background: #81C784 !important;
+      color: white !important;
+  }
+  
