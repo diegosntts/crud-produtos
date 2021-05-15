@@ -4,3 +4,5 @@ Crud produtos será um sistema desenvolvido para expor meus conhecimentos nas te
 Requisitos: python3
 
 Execução: pip install -r requirements.txt
+
+Python3 manage.py runserver
