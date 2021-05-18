@@ -18,7 +18,7 @@ ALLOWED_HOSTS = ['*']
 
 
 # Application definition
-
+# Adicionar django-restframwork em istalled_apps
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -67,6 +67,7 @@ WSGI_APPLICATION = 'quarto.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# Database pode ser automatizada (pesquisar na documentação)
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
