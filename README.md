@@ -4,7 +4,8 @@ Crud produtos será um sistema desenvolvido para expor meus conhecimentos nas te
 Trablhando atualmente no projeto:
 
 Templates 
-API django
+API django:
+https://www.django-rest-framework.org/
 
 Requisitos: python3
 
