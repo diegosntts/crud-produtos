@@ -3,7 +3,8 @@ Crud produtos será um sistema desenvolvido para expor meus conhecimentos nas te
 
 Trablhando atualmente no projeto:
 
-Templates 
+Templates / API
+
 API django:
 https://www.django-rest-framework.org/
 
