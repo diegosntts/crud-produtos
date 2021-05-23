@@ -1,6 +1,6 @@
 # crud-produtos
 
-Trablhando atualmente no projeto:
+Trabalhando atualmente no projeto:
 
 Templates / API
 
@@ -15,3 +15,4 @@ Requisitos: python3
 Execução: pip install -r requirements.txt
 
 Python3 manage.py runserver
+Banco: PostgreSQL
