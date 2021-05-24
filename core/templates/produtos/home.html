@@ -41,7 +41,7 @@ Products
             <tr>
                 <th>Name</th>
                 <th>Price</th>
-                <th>City</th>
+                <th>Estado</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -51,7 +51,7 @@ Products
             <tr>
                 <td>{{ produto.nome }}</td>
                 <td>{{ produto.preco }}</td>
-                <td>{{ produto.cidade }}</td>
+                <td>{{ produto.estado }}</td>
                 <td>
                     <a title="Editar" class="btn btn-warning btn-sm" href="{% url 'editar_produtos' pk=produto.pk %}">
                         <i class="material-icons align-middle"></i> Editar
@@ -60,7 +60,7 @@ Products
             </tr>
             {% empty %}
             <tr>
-                <td colspan="3">Sem registro!</td>
+                <td colspan="4">Sem registro!</td>
             </tr>
             {% endfor %}
         </tbody>
@@ -71,13 +71,4 @@ Products
     {% include "../pagination.html" %}
     {% endwith %}
 </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 {% endblock conteudo %}

@@ -6,13 +6,14 @@ from ..models import Produtos
 class ProdutosForm(forms.ModelForm):
     class Meta:
         model = Produtos
-        fields = ['nome', 'preco', 'cidade']
+        fields = ['nome', 'preco', 'descricao', 'estado']
 
         widgets = {
-            'cidade': select.Select2Widget(attrs={'style': 'width: 100%'})
+            'estado': select.Select2Widget(attrs={'style': 'width: 100%'})
         }
         help_texts = {
             'nome': 'Informe o nome do produto',
             'preco': 'Informe o preço do produto',
-            'cidade': 'Informe a cidade do produto'
+            'descricao': 'Informe uma descrição',
+            'estado': 'Informe o estado do produto'
         }

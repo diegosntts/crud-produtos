@@ -23,7 +23,7 @@ def home_produtos(request, template_name="produtos/home.html"):
 
 
 def cadastrar_produtos(request, template_name="produtos/cadastrar.html"):
-    form = ProdutosForm(request.POST or None)
+    form = ProdutosForm(request.POST or None, request.FILES or None)
     if request.method == 'POST':
         try:
             if form.is_valid():
@@ -41,7 +41,7 @@ def cadastrar_produtos(request, template_name="produtos/cadastrar.html"):
 
 def editar_produtos(request, pk, template_name="produtos/cadastrar.html"):
     produto = Produtos.objects.get(pk=pk)
-    form = ProdutosForm(request.POST or None, instance=produto)
+    form = ProdutosForm(request.POST or None, request.FILES or None, instance=produto)
     
     if form.is_valid():
         form.save()

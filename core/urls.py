@@ -11,7 +11,7 @@ urlpatterns = [
     path('produtos/cadastrar', cadastrar_produtos, name="cadastrar_produtos"),
     path('produtos/editar/<int:pk>', editar_produtos, name="editar_produtos"),
     # Rotas de dasboard
-    path('dashboard/', dashboard_home, name="dashboard_home")
+    #path('dashboard/', dashboard_home, name="dashboard_home")
 
     # Rotas de help
 ]
