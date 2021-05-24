@@ -1,5 +1,7 @@
 # crud-produtos
 
+O sistema crud será implementado o Power BI para maior desenvolvimentos dos dados
+
 Trabalhando atualmente no projeto:
 
 Templates / API
