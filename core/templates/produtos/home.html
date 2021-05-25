@@ -11,7 +11,7 @@ Products
 <div class="row">
     <div class="col-sm-3 col-12">
         <a class="btn btn-success" href="{% url 'cadastrar_produtos'%}">
-            <i class="material-icons align-middle"></i>Register
+            <i class="material-icons align-middle"></i>Cadastrar
         </a>
     </div>
     <div class="col-sm-9 col-12 float-right">
@@ -22,7 +22,7 @@ Products
             </div>
             <div class="ml-2">
                 <button type="submit" class="btn btn-success btn-sm" id="busca-submit" name="busca-submit">
-                    <i class="material-icons align-middle"></i>Search
+                    <i class="material-icons align-middle"></i>Pesquisar
                 </button>
                 {% if busca is not None %}
                 <a class="btn btn-primary btn-sm text-white" name="limpar-busca" href="">
@@ -40,9 +40,9 @@ Products
         <thead class="thead-dark">
             <tr>
                 <th>Name</th>
-                <th>Price</th>
+                <th>Preço</th>
                 <th>Estado</th>
-                <th>Actions</th>
+                <th>Ações</th>
             </tr>
         </thead>
         <tbody>
@@ -54,13 +54,16 @@ Products
                 <td>{{ produto.estado }}</td>
                 <td>
                     <a title="Editar" class="btn btn-warning btn-sm" href="{% url 'editar_produtos' pk=produto.pk %}">
-                        <i class="material-icons align-middle"></i> Editar
+                        <i class="material-icons align-middle">edit</i> 
+                    </a>
+                    <a title="Informações" class="btn btn-warning btn-sm" href="{% url 'info_produtos' pk=produto.pk %}">
+                        <i class="material-icons align-middle">info</i> 
                     </a>
                 </td>
             </tr>
             {% empty %}
             <tr>
-                <td colspan="4">Sem registro!</td>
+                <td colspan="5">Sem registro!</td>
             </tr>
             {% endfor %}
         </tbody>

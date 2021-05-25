@@ -47,5 +47,12 @@ def editar_produtos(request, pk, template_name="produtos/cadastrar.html"):
         form.save()
         return redirect('home_produtos')
     return render(request, template_name, {'form':form, 'produto':produto})
+
+def info_produtos(request, pk, template_name="produtos/info.html"):
+    produto = get_object_or_404(Produtos, pk=pk)
+    
+    return render(request, template_name, {'produto': produto})
+
+    
        
 
