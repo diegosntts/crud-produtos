@@ -3,7 +3,10 @@ O sistema crud será implementado o Power BI para maior desenvolvimentos dos dad
 
 Trabalhando atualmente no projeto:
 
-Implementando Power BI para calcular dados dos produtos
+Implementar anexo
+
+Implementar aba de produtos vendidos
+
 
 API django:
 https://www.django-rest-framework.org/
