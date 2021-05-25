@@ -1,5 +1,6 @@
 # Chamada
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.core.paginator import InvalidPage, Paginator
 from django.shortcuts import redirect, render, get_object_or_404
 
@@ -12,7 +13,7 @@ ITEMS_PER_PAGE = 4
 # Home produto
 # Home produto ainda precisa ser modificada
 
-
+@login_required
 def home_produtos(request, template_name="produtos/home.html"):
     context = {
         'produtos': Produtos.objects.all()
@@ -21,7 +22,7 @@ def home_produtos(request, template_name="produtos/home.html"):
 
 # Cadastrar Produto
 
-
+@login_required
 def cadastrar_produtos(request, template_name="produtos/cadastrar.html"):
     form = ProdutosForm(request.POST or None, request.FILES or None)
     if request.method == 'POST':
@@ -38,7 +39,7 @@ def cadastrar_produtos(request, template_name="produtos/cadastrar.html"):
 
 # Editar Produto
 
-
+@login_required
 def editar_produtos(request, pk, template_name="produtos/cadastrar.html"):
     produto = Produtos.objects.get(pk=pk)
     form = ProdutosForm(request.POST or None, request.FILES or None, instance=produto)
@@ -48,6 +49,7 @@ def editar_produtos(request, pk, template_name="produtos/cadastrar.html"):
         return redirect('home_produtos')
     return render(request, template_name, {'form':form, 'produto':produto})
 
+@login_required
 def info_produtos(request, pk, template_name="produtos/info.html"):
     produto = get_object_or_404(Produtos, pk=pk)
     

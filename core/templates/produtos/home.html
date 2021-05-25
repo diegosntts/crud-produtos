@@ -6,7 +6,7 @@ Products
 {% endblock titulo %}
 <!--Capturando o conteudo para jogar na base -> home-->
 {% block conteudo %}
-<h1>Products</h1>
+<h1>Produtos</h1>
 <br>
 <div class="row">
     <div class="col-sm-3 col-12">
@@ -43,6 +43,7 @@ Products
                 <th>Preço</th>
                 <th>Estado</th>
                 <th>Ações</th>
+                <th>Status</th>
             </tr>
         </thead>
         <tbody>
@@ -60,6 +61,7 @@ Products
                         <i class="material-icons align-middle">info</i> 
                     </a>
                 </td>
+                <td style="color: green;"><strong>Ativo</strong></td>
             </tr>
             {% empty %}
             <tr>

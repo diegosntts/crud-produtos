@@ -16,7 +16,4 @@ urlpatterns = [
     # Rotas de dasboard
     
     path('dashboard', home_dashboard, name="home_dashboard"),
-
-    # Rotas de login
-    path('login', home_login, name="home_login")
 ]

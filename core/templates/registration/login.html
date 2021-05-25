@@ -1,0 +1,29 @@
+{% extends '../base_painel.html' %}
+{% load crispy_forms_tags %}
+{% block titulo %}
+Login
+{% endblock titulo%}
+{% block conteudo %}
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-4 offset-md-4">
+        <div style="text-align: center;">
+            <h1><strong><span style="color: #4f4d5e;">My</span></strong><strong><span style="color: rgb(73, 117, 212);">Vendas</span></strong></h1>
+        </div>
+        <div class="card auth-card" style="box-shadow: 6px 5px #444258;">
+            <div class="card-body">
+                <h4 class="card-title text-center">Entrar</h4>
+                <form method="post">
+                    {% csrf_token %}
+                    <input type="hidden" name="next" value="{{ next }}">
+
+                    {{ form|crispy }}
+                    <button type="submit" class="btn btn-primary btn-block">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock conteudo %}

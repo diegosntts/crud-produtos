@@ -30,9 +30,10 @@
       <a style="text-decoration:none; color:aliceblue" class="navbar-right" href="{% url 'home_produtos' %}">My
         Vendas</a>
       <ul class="nav justify-content-end">
+        {% if user.is_authenticated %}
         <li class="nav-item">
           <a style="color:aliceblue" class="nav-link active" aria-current="page"
-            href="{% url 'home_produtos' %}">Home</a>
+            href="/">Home</a>
         </li>
         <li class="nav-item">
           <a style="color:aliceblue" class="nav-link" href="#">Opções</a>
@@ -40,9 +41,16 @@
         <li class="nav-item">
           <a style="color:aliceblue" class="nav-link" href="#">Perfil</a>
         </li>
+        {% else %}
         <li class="nav-item">
-          <a style="color:aliceblue" class="nav-link " href="{% url 'home_login' %}" tabindex="-1" aria-disabled="true">Entrar</a>
+          <a style="color:aliceblue" class="nav-link " href="/accounts/login" tabindex="-1" aria-disabled="true">Entrar</a>
         </li>
+        {% endif %}
+        {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a style="color:aliceblue" class="nav-link " href="/accounts/logout" tabindex="-1" aria-disabled="true">Sair</a>
+        </li>
+        {% endif %}
       </ul>
     </div>
   </nav>
@@ -57,7 +65,7 @@
           <br>
         </div>
         <div id="list-aside" class="list-group list-group-flush">
-          <a href="" class="list-group-item list-group-item-action align-items-center">
+          <a href="/" class="list-group-item list-group-item-action align-items-center">
             <i class="material-icons align-middle">home</i> Página Inicial</a>
           <a href="{% url 'home_dashboard'%}" class="list-group-item list-group-item-action align-items-center">
             <i class="material-icons align-middle">group</i> Dashboard</a>
@@ -79,7 +87,7 @@
             -->
             <a href="" class="list-group-item list-group-item-action align-items-center">
               <i class="material-icons align-middle">account_circle</i> Usuários</a>
-          <a href="" class="list-group-item list-group-item-action align-items-center">
+          <a href="/" class="list-group-item list-group-item-action align-items-center">
             <i class="material-icons align-middle">close</i> Sair</a>
         </div>
       </div>
