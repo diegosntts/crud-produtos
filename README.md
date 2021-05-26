@@ -5,6 +5,8 @@ Trabalhando atualmente no projeto:
 
 Implementar anexo
 
+Listar usuários
+
 Implementar aba de produtos vendidos
 
 Implementar graficos na aba de dashboard
