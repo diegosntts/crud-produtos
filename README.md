@@ -14,6 +14,9 @@ Implementar graficos na aba de dashboard
 API django:
 https://www.django-rest-framework.org/
 
+Fast API:
+
+
 Documentação:
 https://docs.djangoproject.com/en/3.2/
 
