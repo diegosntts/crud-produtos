@@ -17,7 +17,6 @@ https://www.django-rest-framework.org/
 Fast API:
 https://fastapi.tiangolo.com/
 
-
 Execução: pip install -r requirements.txt
 
 Python3 manage.py runserver
