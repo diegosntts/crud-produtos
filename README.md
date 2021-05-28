@@ -3,13 +3,13 @@ O sistema crud será implementado o Power BI para maior desenvolvimentos dos dad
 
 Trabalhando atualmente no projeto:
 
-Implementar anexo
+- Implementar anexo
 
-Implementar usuarios ativos e inativos
+- Implementar usuarios ativos e inativos
 
-Implementar aba de produtos vendidos
+- Implementar aba de produtos vendidos
 
-Implementar graficos na aba de dashboard
+- Implementar graficos na aba de dashboard
 
 API django:
 https://www.django-rest-framework.org/
