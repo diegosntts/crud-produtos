@@ -17,8 +17,6 @@ https://www.django-rest-framework.org/
 Fast API:
 https://fastapi.tiangolo.com/
 
-Documentação:
-https://docs.djangoproject.com/en/3.2/
 
 Execução: pip install -r requirements.txt
 
