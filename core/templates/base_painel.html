@@ -27,19 +27,11 @@
   <!-- style dividido pelas tags (resolver)!-->
   <nav class="navbar navbar-light bg-dark">
     <div class="container-fluid">
-      <a style="text-decoration:none; color:aliceblue" class="navbar-right" href="{% url 'home_produtos' %}">My
-        Vendas</a>
+      <a style="text-decoration:none; color:aliceblue" class="navbar-right" href="{% url 'home_produtos' %}"><h3><strong>MyVendas</strong></h3></a>
       <ul class="nav justify-content-end">
         {% if user.is_authenticated %}
         <li class="nav-item">
-          <a style="color:aliceblue" class="nav-link active" aria-current="page"
-            href="/">Home</a>
-        </li>
-        <li class="nav-item">
           <a style="color:aliceblue" class="nav-link" href="#">Opções</a>
-        </li>
-        <li class="nav-item">
-          <a style="color:aliceblue" class="nav-link" href="#">Perfil</a>
         </li>
         {% else %}
         <li class="nav-item">
@@ -56,7 +48,6 @@
   </nav>
   <div id="app">
     <div class="d-flex" id="wrapper">
-
       <!-- Sidebar -->
       <div class="border-right" id="sidebar-wrapper">
         <div class="sidebar-heading text-center">
@@ -85,7 +76,7 @@
           <a href="" class="list-group-item list-group-item-action align-items-center">
             <i class="material-icons align-middle">view_list</i> Configurações</a>
             -->
-            <a href="" class="list-group-item list-group-item-action align-items-center">
+            <a href="{% url  'home_usuarios' %}" class="list-group-item list-group-item-action align-items-center">
               <i class="material-icons align-middle">account_circle</i> Usuários</a>
           <a href="/" class="list-group-item list-group-item-action align-items-center">
             <i class="material-icons align-middle">close</i> Sair</a>
