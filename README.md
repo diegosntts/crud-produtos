@@ -2,9 +2,9 @@
 
 Trabalhando atualmente no projeto:
 
-- Implementar anexo
+Implementar anexo
 
-- Implementar usuarios ativos e inativos
+Implementar usuarios ativos e inativos
 
 - Implementar aba de produtos vendidos
 
