@@ -8,7 +8,6 @@ Trabalhando atualmente no projeto:
 
 - Implementar aba de produtos vendidos
 
-
 API django:
 https://www.django-rest-framework.org/
 
