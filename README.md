@@ -9,7 +9,6 @@ Trabalhando atualmente no projeto:
 
 - Implementar aba de produtos vendidos
 
-- Implementar graficos na aba de dashboard
 
 API django:
 https://www.django-rest-framework.org/
