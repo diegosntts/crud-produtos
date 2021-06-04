@@ -6,8 +6,6 @@ Implementar usuarios ativos e inativos
 
 Implementar aba de produtos vendidos
 
-Css core otmizar
-
 API django:
 https://www.django-rest-framework.org/
 
