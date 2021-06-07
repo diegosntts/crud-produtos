@@ -1,4 +1,4 @@
-# MyVendas
+# MyVendasProdutos
 
 API django:
 https://www.django-rest-framework.org/
