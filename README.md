@@ -2,7 +2,7 @@
 
 FastAPI:
 
-adicionar links
+- Adicionar link documentação
 
 API django:
 https://www.django-rest-framework.org/
