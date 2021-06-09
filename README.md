@@ -1,6 +1,7 @@
 # MyVendasProdutos
 
 FastAPI:
+- Implementação com grafana
 
 - Adicionar link documentação
 
