@@ -2,6 +2,7 @@
 
 Monitoramento:
 - Implementação com grafana
+- -PowerBI
 
 FastAPI
 
