@@ -1,7 +1,9 @@
 # MyVendasProdutos
 
-FastAPI:
+Monitoramento:
 - Implementação com grafana
+
+FastAPI
 
 - Adicionar link documentação
 
