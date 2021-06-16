@@ -1,5 +1,5 @@
 # MyVendasProdutos
 
 Monitoramento:
-- Implementação com grafana
+- Implementação com grafan
 
