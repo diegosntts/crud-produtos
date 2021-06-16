@@ -1,6 +1,6 @@
 # MyVendasProdutos
 
 Monitoramento:
-Implemnetação Rocketchat
+- Implemnetação Rocketchat
 - Implementação com grafana
 
