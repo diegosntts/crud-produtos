@@ -3,5 +3,5 @@
 Monitoramento:
 
 - Implemnetação Rocketchat
-- Implementação com grafana & prometheus
+- Implementação com grafana & prometheus + rocketChat
 
